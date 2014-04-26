@@ -29,6 +29,17 @@
         font-size: 26px;
         font-family: helvetica;
       }
+      /*h1{
+        position: fixed;
+        top: 25%;
+        left: 45%;
+        right: 45%;
+      }*/
+      #content:{
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;        
+      }
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -39,7 +50,12 @@
     <![endif]-->
   </head>
   <body>
-
+    <div id="col-md-6 col-offset-2">
+      <h1>GeoPebble</h1>
+      <p>Input a location you want to visit</p>
+      <p>App tracks your location</p>
+      <p>Pebble notification when you're within a mile</p>
+    </div>
     <input type="text" class="form-control searchbar" placeholder="Enter a location and hit enter to submit!">
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
