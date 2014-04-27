@@ -7,39 +7,46 @@
     <title>GeoPebble</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="geo_pebble/src/bootstrap-3.1.1-dist/css/bootstrap.css">
+    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
     <!-- Optional theme -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"> -->
     <style>
       .form-control:focus{
         border-color: #D43D26;
         outline: 0;
         -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(212, 61, 38, .6);
         box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(212, 61, 38, .6);
+        border-radius: 25px;
       }
       .searchbar {
         position: fixed;
         top: 50%;
         left: 20%;
         right: 20%;
-
+        border-radius: 25px;
+        border-color: #FF9000;
         height: 8%;
         width: 60%;
 
         font-size: 26px;
         font-family: helvetica;
       }
-      /*h1{
-        position: fixed;
-        top: 25%;
-        left: 45%;
-        right: 45%;
-      }*/
-      #content:{
+      h1{
+        font-size: 36pt;
+        text-align: center;
+        margin-top: 35%;
+        font-family: 'Press Start 2P', 'cursive';
+        text-shadow: 2px 2px 5px #FF9000;
+      }
+      p{
+        text-align: center;
+      }
+      /*#content:{
         position: relative;
         margin-right: auto;
         margin-left: auto;        
-      }
+      }*/
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -50,11 +57,14 @@
     <![endif]-->
   </head>
   <body>
-    <div id="col-md-6 col-offset-2">
-      <h1>GeoPebble</h1>
-      <p>Input a location you want to visit</p>
-      <p>App tracks your location</p>
-      <p>Pebble notification when you're within a mile</p>
+    <div class = "row">
+      <div class="col-md-4 col-md-offset-4">
+        <h1>GeoPebble</h1>
+        <br>
+        <p>Input a location you want to visit</p>
+        <p>App tracks your location</p>
+        <p>Pebble notification when you're within a mile</p>
+      </div>
     </div>
     <input type="text" class="form-control searchbar" placeholder="Enter a location and hit enter to submit!">
 
